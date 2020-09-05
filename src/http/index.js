@@ -8,7 +8,7 @@ export const getUsuarios = async (from=0, limit=10) => {
   try {
 
     //let data = await axios.get(API_URL + `users?from=${from}&limit=${limit}`);
-    let data = await axios.get(API_URL + `users`);
+    let data = await axios.get(API_URL + `users?from=${from}&limit=${limit}`);
     //console.log(data)
     return data
 
