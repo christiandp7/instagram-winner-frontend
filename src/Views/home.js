@@ -1,9 +1,19 @@
 import React from 'react'
 
+import {
+  Col,
+  Row,
+  Card,
+} from 'react-bootstrap'
+
 function home() {
   return (
     <div>
-      <h1>Home</h1>
+      <Row>
+      <Col>
+      </Col>
+      </Row>
+      
     </div>
   )
 }
