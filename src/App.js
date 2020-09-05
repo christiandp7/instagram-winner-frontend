@@ -10,8 +10,6 @@ import Home from './Views/home'
 import Users from './Views/users'
 import AddUsers from './Views/add-users'
 
-import './app.css'
-
 function App() {
   return (
     <Router>

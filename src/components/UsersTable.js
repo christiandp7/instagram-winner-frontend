@@ -5,6 +5,8 @@ import paginationFactory from 'react-bootstrap-table2-paginator'
 import axios from 'axios'
 import swal from '@sweetalert/with-react'
 
+import styles from '../app.module.css'
+
 import { getUsuarios } from '../http/index'
 
 import {
@@ -44,7 +46,7 @@ function UsersTable() {
   
 
   const imageFormatter = (cell, row) => {
-    return (<img className="roundedCircle avatar" src={cell} />)
+    return (<img className={styles.avatar} src={cell} />)
   }
 
   const usernameFormatter = (cell, row) => {
@@ -74,7 +76,7 @@ function UsersTable() {
       title: "Eliminar: ",
       content: (
         <div className="pb-3">
-          <img className="avatar lg" src={user.image} />
+          <img className={styles.avatar_lg} src={user.image} />
           <h5>{user.username}</h5>
         </div>
       ),
