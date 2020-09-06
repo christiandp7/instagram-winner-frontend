@@ -17,3 +17,16 @@ export const getUsuarios = async (from=0, limit=10) => {
   }
   
 }
+
+
+export const getStats = async () => {
+  try {
+    let data = await axios.get(API_URL + 'users/stats');
+    console.log(data)
+    return data.data
+
+  } catch (error) {
+    console.error(error)
+  }
+  
+}
