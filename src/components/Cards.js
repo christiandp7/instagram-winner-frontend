@@ -22,10 +22,7 @@ function Cards() {
       setTotal(resp.total)
     })
   }, [])
-
-  const getComents = () => {
-
-  }
+  
 
   return (
     <>
